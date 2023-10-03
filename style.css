@@ -1,0 +1,333 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcf8f9;
+    font-family: 'Young Serif', serif;
+    color: #7A36D9;
+}
+
+p{
+    font-family: 'Young Serif', serif;
+    text-align: justify;
+}
+
+
+::-webkit-scrollbar{
+    width: .75em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #B080F2;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #9C5EF2;
+    border-radius: .6em;
+}
+
+#header{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    height: 4em;
+    background: #fff;
+    box-shadow: 0 0 1.25em 0 #CFACF2;
+}
+
+#header .logo img{
+    height: 4.5em;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #7A36D9;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color:#CFACF2;
+}
+
+.navbar .dropdown ul{
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+    opacity: 0;
+    background: #f1f1f1;
+    box-shadow: 0 0 2em rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: .5em;
+}
+
+.navbar .dropdown ul a:hover{
+    color: #CFACF2;
+}
+
+.navbar .dropdown:hover>ul{
+    opacity: 1;
+    visibility: visible;
+}
+.mobile-nav-toggle{
+    color:#CFACF2;
+    font-size: 1.8em;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x{
+    color: #f1f1f1;
+}
+
+@media (max-width: 36em){
+    .mobile-nav-toggle{
+      display: block;
+    }
+  
+    .navbar ul{
+      display: none;
+    }
+
+    .navbar a{
+        padding: .85em;
+    }
+}
+.navbar-mobile{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #CFACF2;
+    transition: 0.3s;
+    z-index: 998;
+}
+  
+.navbar-mobile .mobile-nav-toggle{
+    position: absolute;
+    top: 1rem;
+    right: 2.7rem;
+}
+  
+.navbar-mobile ul{
+    display: block;
+    position: absolute;
+    top: 3.43em;
+    right: 1em;
+    padding: .62em 0;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+  
+.navbar-mobile li:hover>a{
+    color: #9C5EF2;
+}
+
+.navbar-mobile .dropdown ul{
+    position: static;
+    display: none;
+    margin: 1em 1em;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #f1f1f1;
+    box-shadow: 0 0 1.8em rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li:hover>a{
+    color: #CFACF2;
+}
+  
+.navbar-mobile .dropdown>.dropdown-active{
+    display: block;
+}
+
+main{
+    position: relative;
+    margin-top: 15em;
+    height: 60vh;
+}
+
+.banner{
+    background-image: url(src/img/B1.png);
+    background-size:30em;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+}
+@media (max-width: 36em){
+    .banner{
+        background-image: url(src/img/B1.png);
+        flex-direction:column-reverse;
+        background-size:15em;
+        
+    }
+
+    
+}
+
+.colorh2{
+    color: #9C5EF2;
+}
+.button{
+    font-size: 2em;
+}
+.button i{
+    margin-top: 3em;
+    color: #7A36D9;
+}
+.button i:hover{
+    color:#B080F2;
+}
+
+#typing-text {
+    border-right: 2px solid #7A36D9;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 24px;
+    animation: typing 5s steps(30, end) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.letra{
+    color: #7A36D9;
+}
+.texto-sobre{
+    color:#B080F2;
+    text-align: right;
+}
+.texto-elas{
+    color:#B080F2;
+    text-align: left;
+}
+
+#sobre .container, #elasnatech .container, #desafio .container, #aprendizado .container, #depoimento .container, #projeto .container{
+    padding: 4em 1em 0 1em;
+}
+
+@media (max-width: 36em){
+    .sobre_box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteudo{
+        padding: 0;
+        margin-top: 1em;
+    }
+}
+
+.conteudo h3{
+    color: #B080F2;
+}
+
+#sobre .col-md-3, #elasnatech .col-md-3, #desafio .col-md-3, #aprendizado .col-md-3{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+@media (max-width: 36em){
+    #sobre .col-md-9, #elasnatech .col-md-9, #desafio .col-md-9, #aprendizado .col-md-9{
+        padding: 0;
+    }
+
+    #sobre p, #elasnatech p, #desafio p, #aprendizado p{
+        margin-bottom: 0;
+    }
+
+    .display-4{
+        font-size: 2.5em;
+    }
+}
+.img-fluid1{
+    max-width: 200%;
+    height: auto;
+}
+.sobre_box{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 0 1.8em rgba(127, 137, 161, 0.25);
+    padding: 1em;
+    color: #9C5EF2;
+}
+
+
+footer{
+    background-color: #f1f1f1;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#contato{
+    margin-top: 5em;
+    background-color:#f1f1f1;
+    padding: 1.5em;
+}
+
+#contato p{
+    margin-bottom: 1em;
+}
+
+.copyright{
+    margin-bottom: 0;
+    color: #7A36D9;
+    font-size: .85em;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1em;
+}
+
+.redes i{
+    font-size: 1.8em;
+    color:#B080F2;
+    padding: 0 1em 0 1em;
+}
+
+.redes i:hover{
+    color:#7A36D9;
+}
+
+.contato-info{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    color: #B080F2;
+}
+
+.contato-info p{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
