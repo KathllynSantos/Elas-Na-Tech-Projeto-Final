@@ -19,7 +19,7 @@ p{
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #B080F2;
+    background-color: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -226,6 +226,16 @@ main{
     text-align: left;
 }
 
+
+a {
+    color: #7A36D9; 
+    text-decoration: none;
+}
+a:hover {
+    color: #9C5EF2; 
+    text-decoration: none;
+}
+
 #sobre .container, #elasnatech .container, #desafio .container, #aprendizado .container, #depoimento .container, #projeto .container{
     padding: 4em 1em 0 1em;
 }
@@ -240,10 +250,6 @@ main{
         padding: 0;
         margin-top: 1em;
     }
-}
-
-.conteudo h3{
-    color: #B080F2;
 }
 
 #sobre .col-md-3, #elasnatech .col-md-3, #desafio .col-md-3, #aprendizado .col-md-3{
@@ -269,17 +275,27 @@ main{
     max-width: 200%;
     height: auto;
 }
-.sobre_box{
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    box-shadow: 0 0 1.8em rgba(127, 137, 161, 0.25);
-    padding: 1em;
-    color: #9C5EF2;
+
+.img-fluid2{
+    background-position: center;
 }
 
+.sobre_box{
+    border-radius: 5px;
+    padding: 1em;
+    color: #7A36D9;
+}
 
+.rectangle{
+    width: 1268px;
+    height: 450px;
+    left: -164px;
+    top: 2649px;
+    background: #CFACF2;
+    
+}
 footer{
-    background-color: #f1f1f1;
+    background-color:  #ffffff;
 }
 
 .redes{
@@ -304,7 +320,6 @@ footer{
     margin-bottom: 0;
     color: #7A36D9;
     font-size: .85em;
-    background-color: rgba(0, 0, 0, 0.2);
     padding: 1em;
 }
 
