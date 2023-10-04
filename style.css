@@ -225,8 +225,6 @@ main{
     color:#B080F2;
     text-align: left;
 }
-
-
 a {
     color: #7A36D9; 
     text-decoration: none;
@@ -294,6 +292,98 @@ a:hover {
     background: #CFACF2;
     
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lista-aprendizados {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item-aprendizado {
+    background-color: #CFACF2;
+    border: 1px solid #7A36D9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.item-aprendizado:hover {
+    transform: scale(1.05);
+}
+
+.item-aprendizado i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #9C5EF2;
+}
+
+.item-aprendizado span {
+    font-weight: bold;
+}
+
+.containerProjetos{
+    width: 100%;
+    background-color: #FBECFF;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCards{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9500D7;
+    border-radius: 50px;
+    margin: 40px 0;
+}
+
+.containerImg{
+    width: 510px;
+    padding-top: 40px;
+}
+
+.containerTexto{
+    width: 80%;
+    padding-top: 20px;
+    color: #FBECFF;
+}
+
+.containerIcones{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgIcones{
+    width: 67px;
+    padding: 30px;
+}
+
 footer{
     background-color:  #ffffff;
 }
@@ -318,7 +408,7 @@ footer{
 
 .copyright{
     margin-bottom: 0;
-    color: #7A36D9;
+    color: #B080F2;
     font-size: .85em;
     padding: 1em;
 }
