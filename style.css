@@ -226,11 +226,11 @@ main{
     text-align: left;
 }
 a {
-    color: #7A36D9; 
+    color: #9C5EF2; 
     text-decoration: none;
 }
 a:hover {
-    color: #9C5EF2; 
+    color: #7A36D9; 
     text-decoration: none;
 }
 
@@ -248,6 +248,8 @@ a:hover {
         padding: 0;
         margin-top: 1em;
     }
+
+
 }
 
 #sobre .col-md-3, #elasnatech .col-md-3, #desafio .col-md-3, #aprendizado .col-md-3{
@@ -259,6 +261,11 @@ a:hover {
 @media (max-width: 36em){
     #sobre .col-md-9, #elasnatech .col-md-9, #desafio .col-md-9, #aprendizado .col-md-9{
         padding: 0;
+    }
+
+    #sobre .col-md-3, #elasnatech .col-md-3, #desafio .col-md-3, #aprendizado .col-md-3{
+        padding-right: 0;
+        padding-left: 0;
     }
 
     #sobre p, #elasnatech p, #desafio p, #aprendizado p{
@@ -282,15 +289,6 @@ a:hover {
     border-radius: 5px;
     padding: 1em;
     color: #7A36D9;
-}
-
-.rectangle{
-    width: 1268px;
-    height: 450px;
-    left: -164px;
-    top: 2649px;
-    background: #CFACF2;
-    
 }
 * {
     margin: 0;
@@ -331,18 +329,8 @@ a:hover {
     font-weight: bold;
 }
 
-.containerProjetos{
-    width: 100%;
-    background-color: #FBECFF;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .containerCards{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -350,18 +338,18 @@ a:hover {
 }
 
 .cards{
-    width: 590px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #9500D7;
+    background-color: #9C5EF2;
     border-radius: 50px;
     margin: 40px 0;
 }
 
 .containerImg{
-    width: 510px;
+    width: 414px;
     padding-top: 40px;
 }
 
@@ -380,9 +368,66 @@ a:hover {
 }
 
 .imgIcones{
-    width: 67px;
+    width: 100px;
     padding: 30px;
 }
+video{
+    width: 30em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 36em){
+    video{
+        width: 100%;
+    }
+}
+
+.col-md-12{
+    padding: 0;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+display: none;
+}
+
+.video .btn{
+    background-color: #9C5EF2;
+    border-radius: .5em;
+    color: #f1f1f1;
+    font-family: 'Young Serif', serif;
+    font-size: .95em;
+}
+
+.video .btn:hover{
+    color: #9C5EF2;
+    border-color: #B080F2;
+    background-color: #f1f1f1;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+footer{
+    background-color: #dac8cb;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
 
 footer{
     background-color:  #ffffff;
